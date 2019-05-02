@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyView">
+        <attr name="iText" format="string" />
+        <attr name="iTextBackgroundColor" format="color" />
+        <attr name="iTextColor" format="color" />
+        <attr name="iTextSize" format="dimension" />
+    </declare-styleable>
+</resources>
