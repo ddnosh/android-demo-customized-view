@@ -29,8 +29,28 @@
         app:iTextColor="@color/colorAccent"
         app:iTextSize="16sp" />
 
+    <com.androidwind.demo.customizedview.view.DragView
+        android:id="@+id/drag1view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical" />
+
     <com.androidwind.demo.customizedview.view.MyLinearLayout
         android:id="@+id/ml"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent"
+        android:background="#55000000"
+        android:orientation="vertical">
+
+        <com.androidwind.demo.customizedview.view.MyTextView
+            android:id="@+id/sub_tv_my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:padding="10dp"
+            app:iText="this is MyTextView"
+            app:iTextBackgroundColor="@color/colorGreen"
+            app:iTextColor="@color/colorAccent"
+            app:iTextSize="16sp" />
+    </com.androidwind.demo.customizedview.view.MyLinearLayout>
 </LinearLayout>

@@ -2,6 +2,7 @@ package com.androidwind.demo.customizedview;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.androidwind.demo.customizedview.view.MyLinearLayout;
 
@@ -18,6 +19,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onBack() {
                 MainActivity.this.finish();
+            }
+
+            @Override
+            public void onFunction() {
+                Toast.makeText(MainActivity.this, "function button clicked", Toast.LENGTH_SHORT).show();
             }
         });
     }
